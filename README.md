@@ -2,8 +2,7 @@
 
 An intelligent tool built with Python and Streamlit to help job seekers optimize their resumes for specific job descriptions. This application analyzes your resume against a job posting, provides a match score, and offers actionable feedback for improvement with **job-specific scoring algorithms**.
 
- 
-*(Note: You can replace the above URL with a real screenshot of your app)*
+
 
 ---
 
