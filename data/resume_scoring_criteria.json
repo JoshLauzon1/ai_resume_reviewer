@@ -1,0 +1,114 @@
+[
+    {
+        "Category": "Section",
+        "Type": "Structure",
+        "Keyword/Pattern": "Education",
+        "Weight": 0.05,
+        "Notes": "Check if section exists"
+    },
+    {
+        "Category": "Section",
+        "Type": "Structure",
+        "Keyword/Pattern": "Experience",
+        "Weight": 0.1,
+        "Notes": "Required for all resumes"
+    },
+    {
+        "Category": "Section",
+        "Type": "Structure",
+        "Keyword/Pattern": "Skills",
+        "Weight": 0.05,
+        "Notes": "Should list technical tools/languages/frameworks"
+    },
+    {
+        "Category": "Section",
+        "Type": "Structure",
+        "Keyword/Pattern": "Projects",
+        "Weight": 0.05,
+        "Notes": "Especially important for entry-level/junior resumes"
+    },
+    {
+        "Category": "Bullet Quality",
+        "Type": "Pattern",
+        "Keyword/Pattern": "Starts with action verb",
+        "Weight": 0.1,
+        "Notes": "e.g., 'Developed', 'Implemented', 'Led', etc."
+    },
+    {
+        "Category": "Bullet Quality",
+        "Type": "Pattern",
+        "Keyword/Pattern": "Contains a number/quantified metric",
+        "Weight": 0.1,
+        "Notes": "Use regex like '\\d+%|\\d+k?'"
+    },
+    {
+        "Category": "Keywords",
+        "Type": "Skill Match",
+        "Keyword/Pattern": "Python, Java, C++, Go",
+        "Weight": 0.1,
+        "Notes": "Languages in job description"
+    },
+    {
+        "Category": "Keywords",
+        "Type": "Skill Match",
+        "Keyword/Pattern": "SQL, NoSQL, MongoDB, PostgreSQL",
+        "Weight": 0.05,
+        "Notes": "DB techs"
+    },
+    {
+        "Category": "Keywords",
+        "Type": "Skill Match",
+        "Keyword/Pattern": "AWS, GCP, Azure, Docker, Kubernetes",
+        "Weight": 0.1,
+        "Notes": "Cloud / DevOps"
+    },
+    {
+        "Category": "Keywords",
+        "Type": "Skill Match",
+        "Keyword/Pattern": "REST, gRPC, GraphQL",
+        "Weight": 0.05,
+        "Notes": "Communication protocols"
+    },
+    {
+        "Category": "Keywords",
+        "Type": "Skill Match",
+        "Keyword/Pattern": "React, Node.js, Express, TypeScript",
+        "Weight": 0.05,
+        "Notes": "Web stack"
+    },
+    {
+        "Category": "Formatting",
+        "Type": "Heuristic",
+        "Keyword/Pattern": "Bullet count in each section",
+        "Weight": 0.05,
+        "Notes": "Recommend 2\u20135 per experience block"
+    },
+    {
+        "Category": "Formatting",
+        "Type": "Heuristic",
+        "Keyword/Pattern": "Sentence length < 30 words",
+        "Weight": 0.05,
+        "Notes": "Clarity and scannability"
+    },
+    {
+        "Category": "Readability",
+        "Type": "NLP Score",
+        "Keyword/Pattern": "Passive voice detection",
+        "Weight": 0.05,
+        "Notes": "Use grammar tools or heuristics"
+    },
+    {
+        "Category": "ATS Friendly",
+        "Type": "Heuristic",
+        "Keyword/Pattern": "Uses standard fonts (Arial, Times, Calibri)",
+        "Weight": 0.03,
+        "Notes": "No images/tables for ATS parsing"
+    },
+    {
+        "Category": "ATS Friendly",
+        "Type": "Heuristic",
+        "Keyword/Pattern": "No unnecessary graphics or icons",
+        "Weight": 0.02,
+        "Notes": "Keeps it clean for parsing"
+    }
+]

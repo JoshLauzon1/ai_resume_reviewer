@@ -1,0 +1,18 @@
+
+John D.
+Software stuff
+Email: johndoe@email.com
+
+Experience:
+- Did backend stuff at company
+- Helped with deployment
+- Made some APIs
+
+Skills: Python Java Git etc
+
+Intern – 2021
+- Helped with software
+
+Projects: I did a project on something cool
+
+Education: Computer Science, 2022

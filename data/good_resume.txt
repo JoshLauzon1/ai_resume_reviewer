@@ -1,0 +1,27 @@
+
+John Doe
+Software Engineer | johndoe@gmail.com | github.com/johndoe | 555-123-4567
+
+SKILLS
+Languages: Python, Java, C++
+Frameworks: React, Node.js, Django
+Tools: Git, Docker, AWS, PostgreSQL
+
+EXPERIENCE
+Backend Engineer – Acme Corp (Jan 2022 – Present)
+- Designed and deployed microservices using Django and PostgreSQL, reducing response time by 40%
+- Led a migration to AWS infrastructure, improving scalability and uptime to 99.9%
+- Implemented CI/CD pipelines with GitHub Actions, reducing deployment time by 2 hours/week
+
+Software Engineering Intern – Beta Inc (May 2021 – Aug 2021)
+- Built REST APIs for internal analytics tools using Flask
+- Collaborated with frontend engineers to integrate APIs with React dashboard
+- Wrote unit tests achieving 95% code coverage
+
+PROJECTS
+SmartCart – Personal Project
+- Developed a smart shopping cart system using OpenCV and Raspberry Pi
+- Achieved 92% object recognition accuracy in real-time tests
+
+EDUCATION
+B.S. in Computer Science – State University, 2022

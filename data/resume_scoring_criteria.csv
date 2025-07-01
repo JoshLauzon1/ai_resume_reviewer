@@ -1,0 +1,17 @@
+Category,Type,Keyword/Pattern,Weight,Notes
+Section,Structure,Education,0.05,Check if section exists
+Section,Structure,Experience,0.1,Required for all resumes
+Section,Structure,Skills,0.05,Should list technical tools/languages/frameworks
+Section,Structure,Projects,0.05,Especially important for entry-level/junior resumes
+Bullet Quality,Pattern,Starts with action verb,0.1,"e.g., 'Developed', 'Implemented', 'Led', etc."
+Bullet Quality,Pattern,Contains a number/quantified metric,0.1,Use regex like '\d+%|\d+k?'
+Keywords,Skill Match,"Python, Java, C++, Go",0.1,Languages in job description
+Keywords,Skill Match,"SQL, NoSQL, MongoDB, PostgreSQL",0.05,DB techs
+Keywords,Skill Match,"AWS, GCP, Azure, Docker, Kubernetes",0.1,Cloud / DevOps
+Keywords,Skill Match,"REST, gRPC, GraphQL",0.05,Communication protocols
+Keywords,Skill Match,"React, Node.js, Express, TypeScript",0.05,Web stack
+Formatting,Heuristic,Bullet count in each section,0.05,Recommend 2–5 per experience block
+Formatting,Heuristic,Sentence length < 30 words,0.05,Clarity and scannability
+Readability,NLP Score,Passive voice detection,0.05,Use grammar tools or heuristics
+ATS Friendly,Heuristic,"Uses standard fonts (Arial, Times, Calibri)",0.03,No images/tables for ATS parsing
+ATS Friendly,Heuristic,No unnecessary graphics or icons,0.02,Keeps it clean for parsing
