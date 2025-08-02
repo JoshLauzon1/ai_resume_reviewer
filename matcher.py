@@ -1,10 +1,9 @@
-import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from utils import RESUME_SECTIONS
+from utils import RESUME_SECTIONS, get_nlp
 from job_specific_scorer import JobSpecificScorer
 
-nlp = spacy.load("en_core_web_sm")
+nlp = get_nlp()
 
 def extract_keywords(text):
     """Extracts keywords (nouns, proper nouns, and noun chunks) from text."""

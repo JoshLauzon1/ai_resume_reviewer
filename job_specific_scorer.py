@@ -1,10 +1,9 @@
 import json
 import re
-import spacy
 from typing import Dict, List, Tuple
-from utils import clean_text
+from utils import clean_text, get_nlp
 
-nlp = spacy.load("en_core_web_sm")
+nlp = get_nlp()
 
 class JobSpecificScorer:
     def __init__(self):
