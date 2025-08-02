@@ -2,7 +2,3 @@ streamlit
 spacy==3.7.2
 scikit-learn
 pdfminer.six
-streamlit
-spacy==3.7.2
-scikit-learn
-pdfminer.six
