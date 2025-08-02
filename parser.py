@@ -73,8 +73,8 @@ def extract_sections(text):
     text_cleaned = clean_text(text)
     for section in RESUME_SECTIONS:
         if section not in sections:
-            match = re.search(r'\b' + section + r'\b', text, re.IGNORECASE)
+            match = re.search(r'\b' + section + r'\b', text_cleaned, re.IGNORECASE)
             if match:
                 sections[section] = True # Mark section as present
-    
+
     return sections
