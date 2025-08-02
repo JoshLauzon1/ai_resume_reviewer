@@ -165,7 +165,9 @@ ai_resume_reviewer/
 ├── requirements.txt                # Project dependencies
 ├── README.md                       # This file
 ├── FEATURES.md                     # Detailed feature documentation
-├── test_scoring.py                 # Test script for validation
+├── tests/                          # Test suite
+│   ├── test_imports.py             # Basic import tests
+│   └── test_scoring.py             # Scoring and section detection tests
 └── data/                           # Data files and examples
     ├── resume_scoring_criteria.json   # Software engineering scoring criteria
     ├── resume_scoring_criteria.csv    # Scoring criteria in CSV format
@@ -236,7 +238,7 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 
 # Run tests
-python test_scoring.py
+pytest
 
 # Start development server
 streamlit run app.py
