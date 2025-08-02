@@ -1,4 +1,4 @@
-python_version = 3.12.*
+python_version == 3.12.*
 streamlit
 spacy==3.7.2
 scikit-learn
