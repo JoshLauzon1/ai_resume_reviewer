@@ -33,6 +33,13 @@ def display_results(analysis):
 
     with col2:
         st.info("Resume Structure")
+        if job_type == 'software_engineering':
+            section_scores = analysis.get('section_scores', {})
+            if isinstance(section_scores, dict) and section_scores:
+                st.markdown("**Section Scores:**")
+                for section, result in section_scores.items():
+                    score = result.get('score', 0) * 100
+                    st.markdown(f"- {section}: {score:.0f}%")
         if analysis['missing_sections']:
             st.warning(f"**Missing Sections:** {', '.join(analysis['missing_sections']).title()}")
         if analysis['present_sections']:
