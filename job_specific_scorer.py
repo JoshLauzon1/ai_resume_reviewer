@@ -1,8 +1,11 @@
 import json
+import logging
 import re
 import spacy
 from typing import Dict, List, Tuple
 from utils import clean_text
+
+logger = logging.getLogger(__name__)
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -16,6 +19,10 @@ class JobSpecificScorer:
             with open('data/resume_scoring_criteria.json', 'r') as f:
                 return json.load(f)
         except FileNotFoundError:
+            logger.error("Scoring criteria file not found at data/resume_scoring_criteria.json")
+            return []
+        except json.JSONDecodeError as e:
+            logger.error("Failed to decode scoring criteria JSON: %s", e)
             return []
     
     def score_software_engineering_resume(self, resume_text: str, resume_sections: Dict) -> Dict:
@@ -33,7 +40,11 @@ class JobSpecificScorer:
         
         total_weight = 0.0
         weighted_score = 0.0
-        
+
+        if not self.criteria:
+            logger.warning("No scoring criteria loaded. Returning default scores.")
+            return scores
+
         for criterion in self.criteria:
             category = criterion['Category']
             criterion_type = criterion['Type']
