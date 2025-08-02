@@ -62,7 +62,7 @@ def analyze_resume(resume_text, job_desc_text, resume_sections, job_type="genera
             "skill_match_score": len(common_keywords) / len(job_desc_keywords) if job_desc_keywords else 0,
             "structure_score": job_specific_results.get('section_scores', {}),
             "missing_keywords": sorted(list(missing_keywords))[:10],
-            "present_sections": [s for s in RESUME_SECTIONS if resume_sections.get(s)],
+            "present_sections": [s for s in RESUME_SECTIONS.keys() if resume_sections.get(s)],
             "missing_sections": [s for s in ['experience', 'education', 'skills'] if s not in [k for k in resume_sections.keys() if resume_sections[k]]],
             "detailed_feedback": job_specific_results.get('detailed_feedback', []),
             "job_type": job_type,
@@ -84,7 +84,7 @@ def analyze_resume(resume_text, job_desc_text, resume_sections, job_type="genera
         skill_match_score = len(common_keywords) / len(job_desc_keywords) if job_desc_keywords else 0
 
         # 3. Structure Score (20%)
-        present_sections = [s for s in RESUME_SECTIONS if resume_sections.get(s)]
+        present_sections = [s for s in RESUME_SECTIONS.keys() if resume_sections.get(s)]
         # Give points for having key sections
         key_sections_present = sum(1 for s in ['experience', 'education', 'skills'] if s in present_sections)
         structure_score = key_sections_present / 3.0
